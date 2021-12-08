@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_movie_poster"
+            android:layout_width="170dp"
+            android:layout_height="250dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_movie_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            tools:text="Transformers Knight rider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cv_movie_poster"
+            app:layout_constraintTop_toTopOf="@+id/cv_movie_poster"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_crew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="Crew: "
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/cv_movie_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_title"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_crew_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="12sp"
+            tools:text="Ridley Scott (dir.), Lady Gaga, Adam Driver"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_crew"
+            app:layout_constraintTop_toBottomOf="@+id/tv_movie_title"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="Release year: "
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/cv_movie_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crew_member"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="12sp"
+            tools:text="Ridley Scott (dir.), Lady Gaga, Adam Driver"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_release"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crew_member"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_imdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="IMDB rating"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/cv_movie_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_date"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_imdb_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="12sp"
+            tools:text="7/10"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_imdb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_imdb"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_date"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

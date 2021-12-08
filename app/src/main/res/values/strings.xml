@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IMDB Demo</string>
+    <string name="app_desc">This app is using MVVM architecture, Kotlin, Dagger2, RxJava, Retrofit, Moshi</string>
+</resources>
